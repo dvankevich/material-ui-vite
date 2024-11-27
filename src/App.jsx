@@ -6,19 +6,23 @@ import ProTip from "./ProTip";
 import Copyright from "./Copyright";
 import ButtonUsage from "./components/ButtonUsage";
 import ZeroWidthStack from "./components/ZeroWidthStack";
+import SignIn from "./components/SignIn/SignIn";
 
 export default function App() {
   return (
-    <Container maxWidth="sm">
-      <Box sx={{ my: 4 }}>
-        <Typography variant="h4" component="h1" sx={{ mb: 2 }}>
-          Material UI Vite.js example
-        </Typography>
-        <ButtonUsage />
-        <ZeroWidthStack />
-        <ProTip />
-        <Copyright />
-      </Box>
-    </Container>
+    <>
+      <SignIn />
+      <Container maxWidth="sm">
+        <Box sx={{ my: 4 }}>
+          <Typography variant="h4" component="h1" sx={{ mb: 2 }}>
+            Material UI Vite.js example
+          </Typography>
+          <ButtonUsage />
+          <ZeroWidthStack />
+          <ProTip />
+          <Copyright />
+        </Box>
+      </Container>
+    </>
   );
 }
