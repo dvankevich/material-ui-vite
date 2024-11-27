@@ -5,6 +5,7 @@ import Box from "@mui/material/Box";
 import ProTip from "./ProTip";
 import Copyright from "./Copyright";
 import ButtonUsage from "./components/ButtonUsage";
+import ZeroWidthStack from "./components/ZeroWidthStack";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
           Material UI Vite.js example
         </Typography>
         <ButtonUsage />
+        <ZeroWidthStack />
         <ProTip />
         <Copyright />
       </Box>
